@@ -1,0 +1,6 @@
+pyvmomi-*
+*__pycache__*
+*.pyc
+test*
+todo*
+*.spec
