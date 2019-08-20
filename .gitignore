@@ -4,3 +4,4 @@ pyvmomi-*
 test*
 todo*
 *.spec
+.vs
