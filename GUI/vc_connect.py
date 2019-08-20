@@ -1,5 +1,5 @@
 """"Provides the main_window"""
-from PyQt5 import QtWidgets, QtGui, QtCore
+from PySide2 import QtWidgets, QtGui, QtCore
 import socket
 from pyvim.connect import SmartConnectNoSSL, Disconnect
 import atexit
@@ -121,4 +121,4 @@ def render_login(window):
     cancel_button.setStyleSheet("color: #3a3d42; background-color: #ffffff")
     cancel_button.resize(180, 35)
     cancel_button.move(320, 200)
-    cancel_button.clicked.connect(window.app.quit)
+    cancel_button.clicked.connect(QtWidgets.QApplication.instance().quit)

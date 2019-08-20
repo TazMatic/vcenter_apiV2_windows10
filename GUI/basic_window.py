@@ -1,12 +1,12 @@
 """"Provides the main_window"""
-from PyQt5 import QtCore, QtWidgets
+from PySide2 import QtCore, QtWidgets
 
 import GUI.vc_connect
 
 
 class main_window(QtWidgets.QMainWindow):
 
-    def __init__(self):
+    def __init__(self, instance):
         super(main_window, self).__init__()
         self.setGeometry(400, 200, 300, 0)
         self.setWindowTitle("VCenter ACDC GUI")
@@ -30,5 +30,5 @@ class main_window(QtWidgets.QMainWindow):
         self.scroll_frame = None
         self.last_rendered = None
         self.vms = list()
-        self.app = QtWidgets.QApplication.instance()
+        self.app = instance
         GUI.vc_connect.render_login(self)
