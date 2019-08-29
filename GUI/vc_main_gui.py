@@ -19,7 +19,7 @@ def render_main_gui(window):
     screen_resolution = '800'+'x'+'600'+'+'+str(int(screen_width/2) - 400) + \
         '+' + str(int(screen_height/2) - 300)
 
-    # resize window for login prompt
+    # resize window for main window prompt
     window.geometry(screen_resolution)
     window.minsize(800, 600)
     window.maxsize(99999, 99999)

@@ -68,7 +68,7 @@ def render_login(window):
     hostname_label.setFont(QtGui.QFont('Helvetica', 14))
     hostname_label.setStyleSheet("background-color: #3a3d42; color: #ffffff")
     hostname_label.move(80, 50)
-    window.host_text = QtWidgets.QLineEdit(window.main_frame)
+    window.host_text = QtWidgets.QLineEdit(window.main_frame, accessibleName='host_text')
     window.host_text.setFont(QtGui.QFont('Helvetica', 14))
     window.host_text.setStyleSheet("color: #3a3d42; background-color: #ffffff")
     window.host_text.resize(300, 30)
@@ -79,7 +79,7 @@ def render_login(window):
     username_label.setFont(QtGui.QFont('Helvetica', 14))
     username_label.setStyleSheet("background-color: #3a3d42; color: #ffffff")
     username_label.move(80, 100)
-    window.username_text = QtWidgets.QLineEdit(window.main_frame)
+    window.username_text = QtWidgets.QLineEdit(window.main_frame, accessibleName='username_text')
     window.username_text.setFont(QtGui.QFont('Helvetica', 14))
     window.username_text.setStyleSheet("color: #3a3d42;"
                                        "background-color: #ffffff")
@@ -91,7 +91,7 @@ def render_login(window):
     password_label.setFont(QtGui.QFont('Helvetica', 14))
     password_label.setStyleSheet("background-color: #3a3d42; color: #ffffff")
     password_label.move(80, 150)
-    window.password_text = QtWidgets.QLineEdit(window.main_frame)
+    window.password_text = QtWidgets.QLineEdit(window.main_frame, accessibleName='password_text')
     window.password_text.setEchoMode(QtWidgets.QLineEdit.Password)
     window.password_text.setFont(QtGui.QFont('Helvetica', 14))
     window.password_text.setStyleSheet("color: #3a3d42;"

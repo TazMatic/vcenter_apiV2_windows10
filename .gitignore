@@ -1,7 +1,7 @@
 pyvmomi-*
 *__pycache__*
 *.pyc
-test*
 todo*
+build
 *.spec
-.vs
+.vs*
