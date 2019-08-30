@@ -5,8 +5,8 @@ import PyInstaller.__main__
 import os
 
 # Globals
-app = 0
-dlg = 0
+app = None
+dlg = None
 
 def build_app():
     dirname = os.path.dirname(__file__)
