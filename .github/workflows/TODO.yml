@@ -4,8 +4,9 @@ on: [push]
 
 jobs:
   TODO:
+    name: todo-actions
     runs-on: ubuntu-latest
     steps:
-    - name: todo-actions
-      uses: dtinth/todo-actions@v0.1.0
-
+      - uses: actions/checkout@master
+      - uses: dtinth/todo-actions@v0.1.0
+      
