@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: todo-actions
-      uses: dtinth/todo-actions@v0.2.0
+      uses: dtinth/todo-actions@v0.1.0
 
